@@ -56,7 +56,7 @@ export default function FeedSection() {
 
       <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group ">
         <div className="md:flex items-center gap-6 px-4 py-2">
-          <img src={image} className="h-35 rounded-2xl cursor-pointer " alt="" />
+          <img src={image} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
             <p className="text-2xl font-medium group-hover:text-pink-500 cursor-pointer border-b-3 border-white group-hover:border-pink-500 duration-500">
               Healthy Cooking Made Easy With Nutritious Recipes
@@ -84,15 +84,15 @@ export default function FeedSection() {
         </div>
       </div>
 
-      <div className="w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl ">
+      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img
             src={tasbir}
-            className="h-35 rounded-2xl cursor-pointer"
+            className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40 "
             alt=""
           />
           <div>
-            <p className="text-2xl font-medium hover:text-red-500 cursor-pointer hover:border-b duration-500">
+            <p className="text-2xl font-medium group-hover:text-red-500 cursor-pointer group-hover:border-pink-500 border-b-3 border-white duration-500">
               Shaping Tomorrow’s Landscape Of Intelligent Machines
             </p>
             <p className="text-gray-700 mt-4">By Jessica Smith No Comment</p>
@@ -102,7 +102,7 @@ export default function FeedSection() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
+        <div className="md:flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
           <div className="flex items-center gap-2">
             <p className="cursor-pointer hover:text-green-500 hover:border-b duration-500">
               <span className="text-green-500">#</span>Inspiration{" "}
@@ -118,11 +118,11 @@ export default function FeedSection() {
         </div>
       </div>
 
-      <div className="w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl ">
-        <div className="flex items-center gap-6 px-4 py-2">
-          <img src={tauko} className="h-35 rounded-2xl cursor-pointer" alt="" />
+      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group ">
+        <div className="md:flex items-center gap-6 px-4 py-2">
+          <img src={tauko} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
-            <p className="text-2xl font-medium hover:text-red-500 cursor-pointer hover:border-b duration-500">
+            <p className="text-2xl font-medium group-hover:text-red-500 cursor-pointer  group-hover:border-pink-500 border-b-3 border-white duration-500">
               Hidden Ways To Save Money That You Might Be Missing
             </p>
             <p className="text-gray-700 mt-4">By Jessica Smith No Comment</p>
@@ -132,7 +132,7 @@ export default function FeedSection() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
+        <div className="md:flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
           <div className="flex items-center gap-2">
             <p className="cursor-pointer hover:text-orange-500 hover:border-b duration-500">
               <span className="text-orange-500">#</span>Gadget{" "}
@@ -148,11 +148,11 @@ export default function FeedSection() {
         </div>
       </div>
 
-      <div className="w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl ">
-        <div className="flex items-center gap-6 px-4 py-2">
-          <img src={topi} className="h-35 rounded-2xl cursor-pointer" alt="" />
+      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+        <div className="md:flex items-center gap-6 px-4 py-2">
+          <img src={topi} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
-            <p className="text-2xl font-medium hover:text-red-500 cursor-pointer hover:border-b duration-500">
+            <p className="text-2xl font-medium group-hover:text-red-500 cursor-pointer  group-hover:border-pink-500 border-b-3 border-white duration-500">
               Time Management Secrets Of An Efficient Engineer
             </p>
             <p className="text-gray-700 mt-4">By Jessica Smith No Comment</p>
@@ -162,7 +162,7 @@ export default function FeedSection() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
+        <div className="md:flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
           <div className="flex items-center gap-2">
             <p className="cursor-pointer hover:text-blue-500 hover:border-b duration-500">
               <span className="text-blue-500">#</span>Travel{" "}
@@ -174,11 +174,11 @@ export default function FeedSection() {
         </div>
       </div>
 
-      <div className="w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl ">
-        <div className="flex items-center gap-6 px-4 py-2">
-          <img src={fool} className="h-35 rounded-2xl cursor-pointer" alt="" />
+      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+        <div className="md:flex items-center gap-6 px-4 py-2">
+          <img src={fool} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
-            <p className="text-2xl font-medium hover:text-red-500 cursor-pointer hover:border-b duration-500">
+            <p className="text-2xl font-medium group-hover:text-red-500 cursor-pointer  group-hover:border-pink-500 border-b-3 border-white duration-500">
               Musical Improvisation Is The Spontaneous Music
             </p>
             <p className="text-gray-700 mt-4">By Jessica Smith No Comment</p>
@@ -188,7 +188,7 @@ export default function FeedSection() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
+        <div className="md:flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
           <div className="flex items-center gap-2">
             <p className="cursor-pointer hover:text-green-500 hover:border-b duration-500">
               <span className="text-green-500">#</span>Inspiration{" "}
@@ -204,11 +204,11 @@ export default function FeedSection() {
         </div>
       </div>
 
-      <div className="w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl ">
-        <div className="flex items-center gap-6 px-4 py-2">
-          <img src={chiya} className="h-35 rounded-2xl cursor-pointer" alt="" />
+      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+        <div className="md:flex items-center gap-6 px-4 py-2">
+          <img src={chiya} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
-            <p className="text-2xl font-medium hover:text-red-500 cursor-pointer hover:border-b duration-500">
+            <p className="text-2xl font-medium group-hover:text-red-500 cursor-pointer  group-hover:border-pink-500 border-b-3 border-white duration-500">
               Unprecedented Growth Of Next-gen Intelligent Solutions
             </p>
             <p className="text-gray-700 mt-4">By Jessica Smith No Comment</p>
@@ -218,7 +218,7 @@ export default function FeedSection() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
+        <div className="md:flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
           <div className="flex items-center gap-2">
             <p className="cursor-pointer hover:text-purple-500 hover:border-b duration-500">
               <span className="text-purple-500">#</span>Entertaiment{" "}
@@ -234,11 +234,11 @@ export default function FeedSection() {
         </div>
       </div>
 
-      <div className="w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl ">
-        <div className="flex items-center gap-6 px-4 py-2">
-          <img src={geet} className="h-35 rounded-2xl cursor-pointer" alt="" />
+      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+        <div className="md:flex items-center gap-6 px-4 py-2">
+          <img src={geet} className="h-40 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
-            <p className="text-2xl font-medium hover:text-red-500 cursor-pointer hover:border-b duration-500">
+            <p className="text-2xl font-medium group-hover:text-red-500 cursor-pointer  group-hover:border-pink-500 border-b-3 border-white duration-500">
               Computer Filters Noise To Make You A Better Listener
             </p>
             <p className="text-gray-700 mt-4">By Jessica Smith No Comment</p>
@@ -248,7 +248,7 @@ export default function FeedSection() {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
+        <div className="md:flex items-center justify-between border-t border-dashed border-gray-300 mt-4 px-4 py-6">
           <div className="flex items-center gap-2">
             <p className="cursor-pointer hover:text-yellow-500 hover:border-b duration-500">
               <span className="text-yellow-500">#</span>Lifestyle{" "}

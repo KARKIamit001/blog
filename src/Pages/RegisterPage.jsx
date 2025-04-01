@@ -4,7 +4,7 @@ export default function RegisterPage() {
   return (
     <div>
        <div className='flex items-center justify-center h-[90vh]'>
-        <form className='w-3/12 border border-gray-200 p-8 space-y-4'>
+        <form className='w-11/12 md:w-6/12 lg:w-4/12 border border-gray-200 p-8 space-y-4'>
         <p className="text-3xl font-bold flex justify-center  ">Register</p>
 
             <div className='flex flex-col'>
