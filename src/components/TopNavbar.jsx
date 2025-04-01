@@ -9,8 +9,8 @@ export default function TopNavbar() {
   return (
    <div className="bg-gradient-to-r from-purple-700 via-blue-300 to-pink-500">
      <div className="s:11/12 md:w-8/12 mx-auto  flex justify-between py-2 text-white">
-      <div className="hidden md:block">
-      <div className="flex gap-4 ">
+      <div className="">
+      <div className="flex gap-4 hidden md:block">
         <p>
           <Blinds />
         </p>
@@ -29,7 +29,7 @@ export default function TopNavbar() {
       </div>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 ">
         <NavLink to="/about">About</NavLink>
         <p>-</p>
         <NavLink to="/login">Login</NavLink>
