@@ -13,6 +13,7 @@ import TopNavbar from "./components/TopNavbar.jsx";
 import BottomNavbar from "./components/BottomNavbar.jsx";
 import Footer from "./components/Footer.jsx";
 import RegisterPage from "./Pages/RegisterPage.jsx";
+import BlogReadPage from "./Pages/BlogReadPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -30,6 +31,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/dashboard" element={<DashboardPage/>} />
         <Route path="/blog/:id" element={<BlogPage/>} />
         <Route path="/join-us" element={<JoinUsPage/>} />
+        <Route path="/blog-read/:id" element={<BlogReadPage/>} />
        
       </Routes>
       <Footer/>

@@ -3,8 +3,16 @@ import { Send } from "lucide-react";
 import { Search } from "lucide-react";
 import { Menu } from "lucide-react";
 import { NavLink } from "react-router";
+import Drawer from 'react-modern-drawer'
+import 'react-modern-drawer/dist/index.css'
 
 export default function BottomNavbar() {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+}
+
+
   return (
     <div className=" bg-white shadow-xl h-16 flex items-center">
       <div className="w-11/12 md:w-8/12 mx-auto flex items-center justify-between">
@@ -25,10 +33,32 @@ export default function BottomNavbar() {
               </button>
             </NavLink>
             <Search />
-            <Menu />
+           
+            
           </div>
+
+         
         </div>
       </div>
+
+      <div className="block md:hidden   ">
+            <button onClick={toggleDrawer}><Menu /></button>
+            <Drawer
+                open={isOpen}
+                onClose={toggleDrawer}
+                direction='right'
+                className='bla bla bla'
+            > 
+                <div className="flex flex-col p-4 justify-center text-xl font-bold opacity-70">
+                  <NavLink to="/">Home</NavLink>
+                  <NavLink to="/about">About</NavLink>
+                  <NavLink to="/dashboard">Dashboard</NavLink>
+                  <NavLink to="/login">Login</NavLink>
+                  <NavLink to="/register">Register</NavLink>
+                  <NavLink to="/contact">Contact</NavLink>
+                </div>
+            </Drawer>
+        </div>
     </div>
   );
 }

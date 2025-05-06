@@ -9,10 +9,19 @@ import chiya from "../../public/coffee.jpg";
 import geet from "../../public/guitar.jpg";
 import { NavLink } from "react-router";
 
-export default function FeedSection() {
+export default function FeedSection({blogs}) {
+  console.log(blogs) 
+
+//props vNEKO PROPERTY = parent ko properties child maa pass gardaa props use hunx
+
   return (
     <div className="mb-20">
-      <div className="w-11/12 md:w-8/12 mx-auto mt-12">
+
+    {
+      blogs.map((item,index)=>(
+
+
+        <div key={index} className="w-11/12 md:w-8/12 mx-auto mt-12 ">
         {/* card */}
         <div className="bg-white shadow-md border border-gray-50 rounded-2xl p-4 group">
           <div className="md:flex gap-8 space-y-4">
@@ -22,13 +31,12 @@ export default function FeedSection() {
               alt="This is ball image"
             />
             <div>
-              <NavLink className="text-2xl font-medium mb-3 flex flex-col group-hover:text-pink-500 cursor-pointer border-b-3 duration-500 border-white group-hover:border-pink-500">
-                The Benefits Of Traveling With A Second Language
+              <NavLink to = {`/blog-read/${item._id}`} className="text-2xl font-medium mb-3 flex flex-col group-hover:text-pink-500 cursor-pointer border-b-3 duration-500 border-white group-hover:border-pink-500">
+                {item.title}
               </NavLink>
               <span className="text-gray-600">By Jessica Smith 6 Comments</span>
               <p className="text-lg text-gray-700 mt-5">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by...
+               {item.description}
               </p>
             </div>
           </div>
@@ -48,13 +56,19 @@ export default function FeedSection() {
 
             <div className="space-x-2">
               <span>🔥299 Views </span>
-              <span>⌚3 Min Read</span>
+              <span>⌚{item.timeToRead} Min Read</span>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
 
-      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group ">
+
+      ))
+    }
+
+    
+
+      {/* <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group ">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img src={image} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
@@ -82,9 +96,9 @@ export default function FeedSection() {
             <span>🔥405 Views </span> <span>⌚5 Min Read</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+      {/* <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img
             src={tasbir}
@@ -116,9 +130,9 @@ export default function FeedSection() {
             <span>🔥523 Views </span> <span>⌚7 Min Read</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group ">
+      {/* <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group ">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img src={tauko} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
@@ -146,9 +160,9 @@ export default function FeedSection() {
             <span>🔥299 Views </span> <span>⌚2 Min Read</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+      {/* <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img src={topi} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
@@ -172,9 +186,9 @@ export default function FeedSection() {
             <span>🔥208 Views </span> <span>⌚6 Min Read</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+      {/* <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img src={fool} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
@@ -202,9 +216,9 @@ export default function FeedSection() {
             <span>🔥237 Views </span> <span>⌚4 Min Read</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+      {/* <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img src={chiya} className="h-35 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
@@ -232,9 +246,9 @@ export default function FeedSection() {
             <span>🔥457 Views </span> <span>⌚9 Min Read</span>
           </p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
+      {/* <div className="w-11/12 md:w-8/12 mx-auto border border-gray-100 mt-10 shadow-xl group">
         <div className="md:flex items-center gap-6 px-4 py-2">
           <img src={geet} className="h-40 rounded-2xl cursor-pointer group-hover:scale-120  w-full object-cover md:w-40" alt="" />
           <div>
@@ -262,7 +276,7 @@ export default function FeedSection() {
             <span>🔥99 Views </span> <span>⌚1 Min Read</span>
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
